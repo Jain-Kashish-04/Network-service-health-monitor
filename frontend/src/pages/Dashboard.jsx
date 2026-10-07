@@ -4,8 +4,9 @@ import { getServices, checkService, deleteService } from '../services/serviceSer
 import { getIncidents } from '../services/incidentService';
 import ServiceTable from '../components/ServiceTable';
 import LoadingSpinner from '../components/LoadingSpinner';
-
 import ErrorMessage from '../components/ErrorMessage';
+
+const StatCard = ({ label, value, color }) => (
   <div className="card">
     <p className="text-sm text-gray-400">{label}</p>
     <p className={`text-3xl font-bold mt-1 ${color}`}>{value}</p>
